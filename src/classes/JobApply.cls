@@ -1,5 +1,6 @@
 /*--------------Comment____________*/
 //commnted by kv
+//added secong line as comment by kv
 public with sharing class JobApply {
 public List<Position__c>pos{get; set;}
 public integer Selected{get; set;}
