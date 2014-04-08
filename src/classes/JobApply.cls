@@ -1,13 +1,5 @@
 /*--------------Comment____________*/
-//skhdfvbsdkbsk
-//Sandeep test
-//test2
-// commneted bu krishnaveni
-//sandy 1235678
-// D krishnaveni***********************1/7/2014**sdfsdf****
-//Sandeep Added 07 Aprl 2014
-//sandeep123
-// added by kv now only 
+//commnted by kv
 public with sharing class JobApply {
 public List<Position__c>pos{get; set;}
 public integer Selected{get; set;}
