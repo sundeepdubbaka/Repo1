@@ -1,0 +1,30 @@
+<apex:page Controller="JobApply" sidebar="False" showHeader="false" >
+<apex:sectionHeader title="Welcome to the Universal Containers Careers Home Page"/>
+<apex:form >
+<apex:pageBlock >
+    <apex:pageBlocksection Title="Present Openings" collapsible="false"> 
+    <apex:PageBlockTable Value="{!PosWrapper}" Var="JobApply" >
+    <apex:column headervalue="Check">
+        <apex:inputCheckbox value="{!JobApply.tounChk}"/>
+         </apex:column>
+        <apex:column headervalue="ID">
+         <apex:outputtext > {!JobApply.InPos.id} </apex:outputtext>
+         </apex:column>
+        <apex:column headervalue="Position Title">
+         <apex:outputtext > {!JobApply.InPos.Name} </apex:outputtext>
+         </apex:column>
+        <apex:column headervalue="Functional Area">
+         <apex:outputtext > {!JobApply.InPos.Funtional_Area__c} </apex:outputtext>
+         </apex:column>
+        <apex:column headervalue="Location">
+         <apex:outputtext > {!JobApply.InPos.Location__c} </apex:outputtext>
+         </apex:column>
+       <apex:column headervalue="Type of Job">
+         <apex:outputtext > {!JobApply.InPos.Job_Type__c} </apex:outputtext>
+         </apex:column>
+
+    </apex:PageBlockTable>
+    </apex:pageBlocksection>
+  </apex:pageBlock>
+</apex:form>
+</apex:page>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint</masterLabel>
+            <translation><!-- Joint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savings</masterLabel>
+            <translation><!-- Savings --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch ID --></label>
+        <name>Branch__c</name>
+        <relationshipLabel><!-- Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>OBC</masterLabel>
+            <translation><!-- OBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ST</masterLabel>
+            <translation><!-- ST --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Of Birth --></label>
+        <name>Date_Of_Birth__c</name>
+    </fields>
+    <fields>
+        <label><!-- E-Mail --></label>
+        <name>E_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>Graduate</masterLabel>
+            <translation><!-- Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Graduate</masterLabel>
+            <translation><!-- Post Graduate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional</masterLabel>
+            <translation><!-- Professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Graduate</masterLabel>
+            <translation><!-- Under Graduate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fathers Name --></label>
+        <name>Fathers_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gross Annual Income (Rs) --></label>
+        <name>Gross_Annual_Income_Rs__c</name>
+        <picklistValues>
+            <masterLabel>&gt; 1 Lac - 10 Lacs</masterLabel>
+            <translation><!-- &gt; 1 Lac - 10 Lacs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 10 Lacs</masterLabel>
+            <translation><!-- &gt; 10 Lacs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nil</masterLabel>
+            <translation><!-- Nil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upto 1 Lac</masterLabel>
+            <translation><!-- Upto 1 Lac --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>Marital_Status__c</name>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation><!-- Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mobile --></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nominee1 Address --></label>
+        <name>Nominee1_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nominee2 Address --></label>
+        <name>Nominee2_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nominee2 --></label>
+        <name>Nominee2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nominee 1 --></label>
+        <name>Nominee_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Occupation --></label>
+        <name>Occupation__c</name>
+        <picklistValues>
+            <masterLabel>Farmer</masterLabel>
+            <translation><!-- Farmer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salaried</masterLabel>
+            <translation><!-- Salaried --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self Employed</masterLabel>
+            <translation><!-- Self Employed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PAN --></label>
+        <name>PAN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salutation --></label>
+        <name>Salutation__c</name>
+        <picklistValues>
+            <masterLabel>Dr</masterLabel>
+            <translation><!-- Dr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mr</masterLabel>
+            <translation><!-- Mr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mrs</masterLabel>
+            <translation><!-- Mrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms</masterLabel>
+            <translation><!-- Ms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prof</masterLabel>
+            <translation><!-- Prof --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Account Holder Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Nominee Details --></label>
+            <section>Nominee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Personal Details --></label>
+            <section>Personal Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

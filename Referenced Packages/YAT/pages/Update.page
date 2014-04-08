@@ -1,0 +1,58 @@
+<apex:page Controller="yat.Mycontroll" action="{!Search}" sidebar="false" showHeader="false">
+<apex:form id="changeStatusForm">
+<apex:pageBlock title="Attendance List" id="pb1" > After saving Click on the session number to return to the session.
+    <apex:pageMessages />
+    <apex:pageBlockButtons >
+        <apex:commandButton value="Save" action="{!save}" />
+        <apex:commandButton value="Cancel" action="{!cancel}"/>
+    </apex:pageBlockButtons>
+    <table width="100%">
+      <tr>
+        <td align="left" ><apex:commandButton value="Prev"  action="{!Prev}" rendered="{!showprev}"  rerender="pb1"/></td>
+        <td align="right"><apex:commandButton value="Next"  action="{!Next}" rendered="{!shownext}"  rerender="pb1"/></td>
+      </tr>
+    </table>
+    <apex:pageBlockTable value="{!Leads}" var="a">
+         <apex:column value="{!a.Name}" />
+         <apex:column value="{!a.yat__Youth__c}"/>
+         <apex:column value="{!a.yat__Session__c}"/>
+   <!--   <apex:column headerValue="{!$ObjectType.ObjectName__c.fields.ObjectField__c.Label}">       
+  -->     <!--     <apex:column headerValue="Present">                
+                <apex:inputField value="{!a.yat__Present__c}"/>
+            </apex:column>  -->      
+          <apex:column headerValue="{!$ObjectType.yat__Attendance__c.fields.yat__Present__c.Label}"><apex:inputField value="{!a.yat__Present__c}" /></apex:column>
+   <apex:column headerValue="{!$ObjectType.yat__Attendance__c.fields.yat__Excused_Absence__c.Label}"><apex:inputField value="{!a.yat__Excused_Absence__c}" /></apex:column>
+        <!--       <apex:column headerValue="Excused Absence">          
+         <apex:inputField value="{!a.yat__Excused_Absence__c}" />
+         </apex:column>    
+          <apex:column><apex:inputField value="{!a.yat__Excused_Absence__c}" /></apex:column>
+            <apex:column headerValue="Excuse Details">
+                <apex:inputField value="{!a.yat__Excuse_Details__c}"/>
+            </apex:column>    -->
+     <apex:column headerValue="{!$ObjectType.yat__Attendance__c.fields.yat__Excuse_Details__c.Label}"><apex:inputField value="{!a.yat__Excuse_Details__c}" /></apex:column>
+     <apex:column headerValue="{!$ObjectType.yat__Attendance__c.fields.yat__rubric_score__c.Label}"><apex:inputField value="{!a.yat__rubric_score__c}" /></apex:column>
+      <!--     <apex:column headerValue="Rubric Score"> -->
+          <!--  <apex:column headerValue="{!a.yat__rubric_score__c}">-->
+         <!--   <apex:column >  <apex:facet name="header">{!a.yat__rubric_score__c}</apex:facet>-->
+          <!--      <apex:inputField value="{!a.yat__rubric_score__c}"/>
+            </apex:column>   -->
+            
+           <!-- <apex:column headerValue="Attendance date">
+                <apex:inputField value="{!a.yat__date__c}"/>
+            </apex:column>-->
+            <apex:column value="{!a.yat__date__c}"/>
+           <!-- <apex:column headerValue="Action"  >
+                        <a href="/00T/e?who_id={!a.id}&retURL=%2F{!a.id}">Next Activity </a>         
+                        <a href="/{!a.id}/e?retURL=%2F{!a.id}" > / EditAttendance</a>
+            </apex:column>-->
+   </apex:pageBlockTable>
+    <table width="100%">
+       <tr>
+          <td align="left" ><apex:commandButton value="Prev"  action="{!Prev}" rendered="{!showprev}"  rerender="pb1"/></td>
+          <td align="Center"><b><apex:outputtext rendered="{!NOT(ISNULL(Leads))}"  value="{!LdList_Size}  records in Session"/></b></td>
+          <td align="right"><apex:commandButton value="Next"  action="{!Next}" rendered="{!shownext}"  rerender="pb1"/></td>
+       </tr>
+     </table>
+</apex:pageBlock>      
+</apex:form>
+</apex:page>
