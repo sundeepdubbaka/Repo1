@@ -2,6 +2,7 @@
 //commnted by kv
 //added secong line as comment by kv
 // added onether line from kv
+//line added by sandeep
 public with sharing class JobApply {
 public List<Position__c>pos{get; set;}
 public integer Selected{get; set;}
